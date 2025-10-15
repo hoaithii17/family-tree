@@ -1,0 +1,27 @@
+<div class="page-header">
+  <h2>Thêm mới Thành Viên</h2>
+</div>
+
+<form class="form-container">
+  <label for="fullname">Họ và tên:</label>
+  <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên">
+
+  <label for="gender">Giới tính:</label>
+  <select id="gender" name="gender">
+    <option value="">-- Chọn giới tính --</option>
+    <option value="Nam">Nam</option>
+    <option value="Nữ">Nữ</option>
+  </select>
+
+  <label for="dob">Ngày sinh:</label>
+  <input type="date" id="dob" name="dob">
+
+  <label for="familyID">Mã dòng họ:</label>
+  <input type="text" id="familyID" name="familyID" placeholder="Nhập mã dòng họ">
+
+  <label for="note">Ghi chú:</label>
+  <textarea id="note" name="note" placeholder="Nhập ghi chú..."></textarea>
+
+  <button type="submit" class="btn-create">💾 Lưu</button>
+  <a href="/personal/list" class="btn-cancel">Hủy</a>
+</form>

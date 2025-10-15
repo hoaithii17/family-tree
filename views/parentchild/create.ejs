@@ -1,0 +1,24 @@
+<div class="page-header">
+  <h2>Thêm mới Quan hệ Cha/Mẹ – Con</h2>
+</div>
+
+<form class="form-container">
+  <label for="parent">Cha/Mẹ:</label>
+  <input type="text" id="parent" name="parent" placeholder="Nhập tên Cha hoặc Mẹ">
+
+  <label for="child">Con:</label>
+  <input type="text" id="child" name="child" placeholder="Nhập tên người con">
+
+  <label for="relationType">Loại quan hệ:</label>
+  <select id="relationType" name="relationType">
+    <option value="">-- Chọn loại quan hệ --</option>
+    <option value="Cha - Con">Cha - Con</option>
+    <option value="Mẹ - Con">Mẹ - Con</option>
+  </select>
+
+  <label for="note">Ghi chú:</label>
+  <textarea id="note" name="note" placeholder="Nhập ghi chú..."></textarea>
+
+  <button type="submit" class="btn-create">💾 Lưu</button>
+  <a href="/parentchild/list" class="btn-cancel">Hủy</a>
+</form>

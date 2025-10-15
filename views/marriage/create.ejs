@@ -1,0 +1,44 @@
+
+<html>
+<head>
+  <title>Thêm Hôn Nhân Mới</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Hệ Thống Quản Lý Gia Phả</h1>
+  <nav>
+    <a href="index.jsp">Trang chủ</a>
+    <a href="marriage-list.jsp" class="active">Hôn nhân</a>
+  </nav>
+</header>
+
+<div class="page-header">
+  <h2>Thêm Hôn Nhân Mới</h2>
+</div>
+
+<form action="AddMarriageServlet" method="post" style="width: 70%; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <label>Chồng:</label><br>
+  <input type="text" name="chong" required><br><br>
+
+  <label>Vợ:</label><br>
+  <input type="text" name="vo" required><br><br>
+
+  <label>Ngày kết hôn:</label><br>
+  <input type="date" name="ngayKetHon" required><br><br>
+
+  <label>Ngày ly hôn:</label><br>
+  <input type="date" name="ngayLyHon"><br><br>
+
+  <label>Ghi chú:</label><br>
+  <textarea name="ghiChu" rows="3"></textarea><br><br>
+
+  <button type="submit" class="btn-create">Lưu</button>
+  <button type="button" class="btn-create" style="background-color: gray;" onclick="window.location.href='marriage-list.jsp'">Hủy</button>
+</form>
+
+<footer>
+  <p>© 2025 - Quản lý Gia Phả</p>
+</footer>
+</body>
+</html>

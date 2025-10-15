@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %> - Cây Gia Phả</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>🌳 HỆ THỐNG QUẢN LÝ CÂY GIA PHẢ</h1>
+    <nav>
+      <a href="/family" class="<%= title === 'Gia tộc' ? 'active' : '' %>">Gia tộc</a> |
+      <a href="/personal" class="<%= title === 'Thành viên' ? 'active' : '' %>">Thành viên</a> |
+      <a href="/marriage" class="<%= title === 'Hôn nhân' ? 'active' : '' %>">Hôn nhân</a> |
+      <a href="/parentchild" class="<%= title === 'Quan hệ Cha/Mẹ-Con' ? 'active' : '' %>">Quan hệ Cha-Con</a> |
+      <a href="/familytree" class="<%= title === 'Sơ đồ' ? 'active' : '' %>">Sơ đồ</a>
+    </nav>
+  </header>
+
+  <main>
+    <%- body %>
+  </main>
+
+  <footer>
+    <p>© 2025 - Quản lý cây gia phả</p>
+  </footer>
+</body>
+</html>
